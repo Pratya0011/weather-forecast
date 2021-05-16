@@ -1,63 +1,48 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    background-color: rgb(110, 39, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.app-wrap{
+    margin: 100px;
+}
+#search-box{
+    opacity: 0.5;
+    color: black;
+    box-shadow: 5px 5px; 
+}
+.location{
+    margin: 40px;
+}
+#city{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 3px black;
+}
+
+#date{
+    color: white;
+    text-shadow: 1px 3px black;
+
+}
+#temp{
+    font-size: 80px;
+    color: white;
+    text-shadow: 1px 3px black;
+
+}
+.row{
+    margin: 50px;
+    color: white;
+    font-size: x-large;
+    text-shadow: 1px 3px black;
+}
+#hi-low{
+    margin:20px ;
+}
