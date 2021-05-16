@@ -15,6 +15,7 @@ let getWeather =()=>{
     .then(res=>{
         let data = res.data;
         cityname.innerHTML = data.name;
+        data.main.temp = Math.round(data.main.temp - 273);
         temp.innerHTML = data.main.temp + '°c';
 
         var curDate = new Date();
@@ -28,7 +29,8 @@ let getWeather =()=>{
         date.innerHTML = weekname + ' '+cdate+' '+cmonth+' '+cyear;
 
         weather.innerHTML = data.weather[0].main;
-        hltemp.innerHTML = data.main.temp_max + '°c ' + '/ ' + data.main.temp_min + '°c';
+
+        hltemp.innerHTML = Math.floor(data.main.temp_max-273) + '°c ' + '/ ' + Math.floor(data.main.temp_min-273) + '°c';
     }).catch(error=>{
         console.log(error);
     })
